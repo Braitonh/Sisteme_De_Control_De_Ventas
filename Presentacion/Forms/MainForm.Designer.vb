@@ -29,25 +29,25 @@ Partial Class MainForm
         Me.btnCompras = New FontAwesome.Sharp.IconButton()
         Me.btnClientes = New FontAwesome.Sharp.IconButton()
         Me.btnDashboard = New FontAwesome.Sharp.IconButton()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Logo = New FontAwesome.Sharp.IconButton()
-        Me.PanelTitle = New System.Windows.Forms.Panel()
-        Me.Salir = New FontAwesome.Sharp.IconPictureBox()
-        Me.Agrandar = New FontAwesome.Sharp.IconPictureBox()
-        Me.Minimisar = New FontAwesome.Sharp.IconPictureBox()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.IconTitle = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Logo = New FontAwesome.Sharp.IconButton()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.IconTitle = New FontAwesome.Sharp.IconPictureBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Minimisar = New FontAwesome.Sharp.IconPictureBox()
+        Me.Agrandar = New FontAwesome.Sharp.IconPictureBox()
+        Me.Salir = New FontAwesome.Sharp.IconPictureBox()
+        Me.PanelTitle = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.PanelTitle.SuspendLayout()
-        CType(Me.Salir, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelDesktop.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Salir, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelTitle.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -199,14 +199,40 @@ Partial Class MainForm
         Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnDashboard.UseVisualStyleBackColor = True
         '
-        'Panel3
+        'PanelDesktop
         '
-        Me.Panel3.Controls.Add(Me.Logo)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(183, 87)
-        Me.Panel3.TabIndex = 0
+        Me.PanelDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.PanelDesktop.Controls.Add(Me.Label2)
+        Me.PanelDesktop.Controls.Add(Me.Label1)
+        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelDesktop.Location = New System.Drawing.Point(183, 47)
+        Me.PanelDesktop.Name = "PanelDesktop"
+        Me.PanelDesktop.Size = New System.Drawing.Size(731, 482)
+        Me.PanelDesktop.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(208, 223)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(163, 47)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Usuario"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 35.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(206, 154)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(276, 56)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Bienvenido"
         '
         'Logo
         '
@@ -229,75 +255,14 @@ Partial Class MainForm
         Me.Logo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Logo.UseVisualStyleBackColor = True
         '
-        'PanelTitle
+        'Panel3
         '
-        Me.PanelTitle.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.PanelTitle.Controls.Add(Me.Salir)
-        Me.PanelTitle.Controls.Add(Me.Agrandar)
-        Me.PanelTitle.Controls.Add(Me.Minimisar)
-        Me.PanelTitle.Controls.Add(Me.lblTitle)
-        Me.PanelTitle.Controls.Add(Me.IconTitle)
-        Me.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelTitle.Location = New System.Drawing.Point(183, 0)
-        Me.PanelTitle.Name = "PanelTitle"
-        Me.PanelTitle.Size = New System.Drawing.Size(841, 47)
-        Me.PanelTitle.TabIndex = 1
-        '
-        'Salir
-        '
-        Me.Salir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Salir.ForeColor = System.Drawing.Color.Silver
-        Me.Salir.IconChar = FontAwesome.Sharp.IconChar.X
-        Me.Salir.IconColor = System.Drawing.Color.Silver
-        Me.Salir.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.Salir.IconSize = 24
-        Me.Salir.Location = New System.Drawing.Point(817, 3)
-        Me.Salir.Name = "Salir"
-        Me.Salir.Size = New System.Drawing.Size(24, 25)
-        Me.Salir.TabIndex = 5
-        Me.Salir.TabStop = False
-        '
-        'Agrandar
-        '
-        Me.Agrandar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Agrandar.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Agrandar.ForeColor = System.Drawing.Color.Silver
-        Me.Agrandar.IconChar = FontAwesome.Sharp.IconChar.ExternalLink
-        Me.Agrandar.IconColor = System.Drawing.Color.Silver
-        Me.Agrandar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.Agrandar.IconSize = 24
-        Me.Agrandar.Location = New System.Drawing.Point(796, 3)
-        Me.Agrandar.Name = "Agrandar"
-        Me.Agrandar.Size = New System.Drawing.Size(24, 25)
-        Me.Agrandar.TabIndex = 4
-        Me.Agrandar.TabStop = False
-        '
-        'Minimisar
-        '
-        Me.Minimisar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Minimisar.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Minimisar.ForeColor = System.Drawing.Color.Silver
-        Me.Minimisar.IconChar = FontAwesome.Sharp.IconChar.Minus
-        Me.Minimisar.IconColor = System.Drawing.Color.Silver
-        Me.Minimisar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.Minimisar.IconSize = 24
-        Me.Minimisar.Location = New System.Drawing.Point(775, 3)
-        Me.Minimisar.Name = "Minimisar"
-        Me.Minimisar.Size = New System.Drawing.Size(24, 25)
-        Me.Minimisar.TabIndex = 3
-        Me.Minimisar.TabStop = False
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(51, 15)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(45, 16)
-        Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Home"
+        Me.Panel3.Controls.Add(Me.Logo)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(183, 87)
+        Me.Panel3.TabIndex = 0
         '
         'IconTitle
         '
@@ -311,47 +276,81 @@ Partial Class MainForm
         Me.IconTitle.TabIndex = 0
         Me.IconTitle.TabStop = False
         '
-        'PanelDesktop
+        'lblTitle
         '
-        Me.PanelDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.PanelDesktop.Controls.Add(Me.Label2)
-        Me.PanelDesktop.Controls.Add(Me.Label1)
-        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelDesktop.Location = New System.Drawing.Point(183, 47)
-        Me.PanelDesktop.MinimumSize = New System.Drawing.Size(841, 482)
-        Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(841, 482)
-        Me.PanelDesktop.TabIndex = 2
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.White
+        Me.lblTitle.Location = New System.Drawing.Point(51, 15)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(45, 16)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Home"
         '
-        'Label2
+        'Minimisar
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(263, 246)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(163, 47)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Usuario"
+        Me.Minimisar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Minimisar.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Minimisar.ForeColor = System.Drawing.Color.Silver
+        Me.Minimisar.IconChar = FontAwesome.Sharp.IconChar.Minus
+        Me.Minimisar.IconColor = System.Drawing.Color.Silver
+        Me.Minimisar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Minimisar.IconSize = 24
+        Me.Minimisar.Location = New System.Drawing.Point(665, 3)
+        Me.Minimisar.Name = "Minimisar"
+        Me.Minimisar.Size = New System.Drawing.Size(24, 25)
+        Me.Minimisar.TabIndex = 3
+        Me.Minimisar.TabStop = False
         '
-        'Label1
+        'Agrandar
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 35.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(261, 177)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(276, 56)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Bienvenido"
+        Me.Agrandar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Agrandar.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Agrandar.ForeColor = System.Drawing.Color.Silver
+        Me.Agrandar.IconChar = FontAwesome.Sharp.IconChar.ExternalLink
+        Me.Agrandar.IconColor = System.Drawing.Color.Silver
+        Me.Agrandar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Agrandar.IconSize = 24
+        Me.Agrandar.Location = New System.Drawing.Point(686, 3)
+        Me.Agrandar.Name = "Agrandar"
+        Me.Agrandar.Size = New System.Drawing.Size(24, 25)
+        Me.Agrandar.TabIndex = 4
+        Me.Agrandar.TabStop = False
+        '
+        'Salir
+        '
+        Me.Salir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Salir.ForeColor = System.Drawing.Color.Silver
+        Me.Salir.IconChar = FontAwesome.Sharp.IconChar.X
+        Me.Salir.IconColor = System.Drawing.Color.Silver
+        Me.Salir.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Salir.IconSize = 24
+        Me.Salir.Location = New System.Drawing.Point(707, 3)
+        Me.Salir.Name = "Salir"
+        Me.Salir.Size = New System.Drawing.Size(24, 25)
+        Me.Salir.TabIndex = 5
+        Me.Salir.TabStop = False
+        '
+        'PanelTitle
+        '
+        Me.PanelTitle.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PanelTitle.Controls.Add(Me.Salir)
+        Me.PanelTitle.Controls.Add(Me.Agrandar)
+        Me.PanelTitle.Controls.Add(Me.Minimisar)
+        Me.PanelTitle.Controls.Add(Me.lblTitle)
+        Me.PanelTitle.Controls.Add(Me.IconTitle)
+        Me.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelTitle.Location = New System.Drawing.Point(183, 0)
+        Me.PanelTitle.Name = "PanelTitle"
+        Me.PanelTitle.Size = New System.Drawing.Size(731, 47)
+        Me.PanelTitle.TabIndex = 1
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1024, 529)
+        Me.ClientSize = New System.Drawing.Size(914, 529)
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.PanelTitle)
         Me.Controls.Add(Me.PanelMenu)
@@ -359,35 +358,35 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Text = "MainForm"
         Me.PanelMenu.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.PanelTitle.ResumeLayout(False)
-        Me.PanelTitle.PerformLayout()
-        CType(Me.Salir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDesktop.ResumeLayout(False)
         Me.PanelDesktop.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Salir, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelTitle.ResumeLayout(False)
+        Me.PanelTitle.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PanelMenu As Panel
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents btnSalir As FontAwesome.Sharp.IconButton
     Friend WithEvents btnProductos As FontAwesome.Sharp.IconButton
     Friend WithEvents btnVentas As FontAwesome.Sharp.IconButton
     Friend WithEvents btnCompras As FontAwesome.Sharp.IconButton
     Friend WithEvents btnClientes As FontAwesome.Sharp.IconButton
     Friend WithEvents btnDashboard As FontAwesome.Sharp.IconButton
-    Friend WithEvents PanelTitle As Panel
-    Friend WithEvents lblTitle As Label
-    Friend WithEvents IconTitle As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents PanelDesktop As Panel
-    Friend WithEvents Logo As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Salir As FontAwesome.Sharp.IconPictureBox
-    Friend WithEvents Agrandar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Logo As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconTitle As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents lblTitle As Label
     Friend WithEvents Minimisar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Agrandar As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Salir As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents PanelTitle As Panel
 End Class
