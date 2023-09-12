@@ -12,7 +12,7 @@ Public Class ProductoRepository
     Public Sub New()
 
         selectAll = "SELECT * FROM producto"
-        insert = "INSERT INTO producto VALUES(@productNumber;@name;@price)"
+        insert = "INSERT INTO producto (productNumber, name, price) VALUES (@productNumber,@name,@price)"
         update = "UPDATE producto SET  productNumber=@productNumber,name=@name,price=@price WHERE product_Id=@product_Id"
         delete = "DELETE FROM producto WHERE product_Id=@product_Id"
 

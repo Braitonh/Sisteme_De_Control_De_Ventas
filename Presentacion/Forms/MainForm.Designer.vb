@@ -29,11 +29,11 @@ Partial Class MainForm
         Me.btnCompras = New FontAwesome.Sharp.IconButton()
         Me.btnClientes = New FontAwesome.Sharp.IconButton()
         Me.btnDashboard = New FontAwesome.Sharp.IconButton()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Logo = New FontAwesome.Sharp.IconButton()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Logo = New FontAwesome.Sharp.IconButton()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.IconTitle = New FontAwesome.Sharp.IconPictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Minimisar = New FontAwesome.Sharp.IconPictureBox()
@@ -41,8 +41,8 @@ Partial Class MainForm
         Me.Salir = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelTitle = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
-        Me.PanelDesktop.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.PanelDesktop.SuspendLayout()
         CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -199,6 +199,36 @@ Partial Class MainForm
         Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnDashboard.UseVisualStyleBackColor = True
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Logo)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(183, 87)
+        Me.Panel3.TabIndex = 0
+        '
+        'Logo
+        '
+        Me.Logo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Logo.FlatAppearance.BorderSize = 0
+        Me.Logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Logo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Logo.ForeColor = System.Drawing.Color.White
+        Me.Logo.IconChar = FontAwesome.Sharp.IconChar.House
+        Me.Logo.IconColor = System.Drawing.Color.White
+        Me.Logo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Logo.IconSize = 32
+        Me.Logo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Logo.Location = New System.Drawing.Point(0, 0)
+        Me.Logo.Name = "Logo"
+        Me.Logo.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
+        Me.Logo.Size = New System.Drawing.Size(183, 60)
+        Me.Logo.TabIndex = 2
+        Me.Logo.Text = "Home"
+        Me.Logo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Logo.UseVisualStyleBackColor = True
+        '
         'PanelDesktop
         '
         Me.PanelDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
@@ -233,36 +263,6 @@ Partial Class MainForm
         Me.Label1.Size = New System.Drawing.Size(276, 56)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Bienvenido"
-        '
-        'Logo
-        '
-        Me.Logo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Logo.FlatAppearance.BorderSize = 0
-        Me.Logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Logo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Logo.ForeColor = System.Drawing.Color.White
-        Me.Logo.IconChar = FontAwesome.Sharp.IconChar.House
-        Me.Logo.IconColor = System.Drawing.Color.White
-        Me.Logo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.Logo.IconSize = 32
-        Me.Logo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Logo.Location = New System.Drawing.Point(0, 0)
-        Me.Logo.Name = "Logo"
-        Me.Logo.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
-        Me.Logo.Size = New System.Drawing.Size(183, 60)
-        Me.Logo.TabIndex = 2
-        Me.Logo.Text = "Home"
-        Me.Logo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Logo.UseVisualStyleBackColor = True
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Logo)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(183, 87)
-        Me.Panel3.TabIndex = 0
         '
         'IconTitle
         '
@@ -358,9 +358,9 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Text = "MainForm"
         Me.PanelMenu.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.PanelDesktop.ResumeLayout(False)
         Me.PanelDesktop.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
         CType(Me.IconTitle, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Minimisar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Agrandar, System.ComponentModel.ISupportInitialize).EndInit()

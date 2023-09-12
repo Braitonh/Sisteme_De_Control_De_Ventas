@@ -54,6 +54,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -98,6 +99,12 @@
     <Compile Include="Forms\DashboardForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FormAgregarProducto.Designer.vb">
+      <DependentUpon>FormAgregarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAgregarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -132,10 +139,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Style\RGBColores.vb" />
+    <Compile Include="Supports\Validation.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\DashboardForm.resx">
       <DependentUpon>DashboardForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAgregarProducto.resx">
+      <DependentUpon>FormAgregarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

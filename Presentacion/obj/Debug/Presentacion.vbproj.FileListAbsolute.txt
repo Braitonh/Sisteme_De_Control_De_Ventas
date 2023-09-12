@@ -22,3 +22,4 @@ C:\Users\Usuario\Desktop\Proyecto Control de sistema de Ventas\Proyecto Control 
 C:\Users\Usuario\Desktop\Proyecto Control de sistema de Ventas\Proyecto Control de Sistema de Ventas\Presentacion\bin\Debug\DataAccess.pdb
 C:\Users\Usuario\Desktop\Proyecto Control de sistema de Ventas\Proyecto Control de Sistema de Ventas\Presentacion\bin\Debug\DataAccess.xml
 C:\Users\Usuario\Desktop\Proyecto Control de sistema de Ventas\Proyecto Control de Sistema de Ventas\Presentacion\bin\Debug\MySql.Data.xml
+C:\Users\Usuario\Desktop\Proyecto Control de sistema de Ventas\Proyecto Control de Sistema de Ventas\Presentacion\obj\Debug\Presentacion.FormAgregarProducto.resources
